@@ -15,11 +15,10 @@ const routes: Routes = [
 @NgModule({
     imports: [
         RouterModule.forRoot(routes, {
-            scrollPositionRestoration: 'enabled',
+            scrollPositionRestoration: 'enabled'/*,
             malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer, url: string) => {
-                // console.log(error); console.log(url);
                 return urlSerializer.parse('/invalid-url');
-            }
+            }*/
         }),
     ],
     exports: [

@@ -25,3 +25,9 @@ src
 ├── favicon.ico                       - Fav icon
 ├── index.html                        - Index page
 |── ...
+
+# Commands
+
+## Build on GithubPages
+
+ng build --prod --output-path docs --base-href site
