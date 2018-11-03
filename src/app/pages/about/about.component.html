@@ -1,0 +1,24 @@
+<p ng>
+    about works!
+</p>
+
+<form class="example-form">
+	<mat-form-field class="example-full-width">
+		<input matInput placeholder="Favorite food" value="Sushi">
+	</mat-form-field>
+
+	<mat-form-field class="example-full-width">
+		<textarea matInput placeholder="Leave a comment"></textarea>
+	</mat-form-field>
+</form>
+
+<mat-grid-list cols="12" rowHeight="2:1">
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
+
+<div *ngFor="let curso of cursos" >
+    {{ curso.nome }}
+</div>
