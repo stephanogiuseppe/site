@@ -2,19 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule } from '@angular/material/input';
-import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './pages/about/about.component';
+// import { AboutComponent } from './pages/about/about.component';
 import { ErrorPageComponent } from './layout/error-page/error-page.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AboutModule } from './pages/about/about.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
+    // AboutComponent,
     ErrorPageComponent,
     HomeComponent
   ],
@@ -22,8 +21,7 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatGridListModule
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
