@@ -1,0 +1,18 @@
+<p>
+  skills works!
+</p>
+
+<table *ngIf="skills$ | async as skills; else loading">
+    <thead>
+        <th>Skill Name</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let skill of skills">
+            <td>{{ skill.name }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ng-template #loading>
+    <span>Loading...</span>
+</ng-template>
