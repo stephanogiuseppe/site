@@ -7,7 +7,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AboutComponent } from './about.component';
 import { AboutRoutingModule } from './about-routing.module';
-
+import { CareerComponent } from './career/career.component';
+import { MeComponent } from './me/me.component';
+import { SkillsComponent } from './skills/skills.component';
+import { AboutService } from './about.service';
 
 @NgModule({
     imports: [
@@ -19,8 +22,13 @@ import { AboutRoutingModule } from './about-routing.module';
     ],
     exports: [],
     declarations: [
-        AboutComponent
+        AboutComponent,
+        CareerComponent,
+        MeComponent,
+        SkillsComponent
     ],
-    providers: [/* service */]
+    providers: [
+        AboutService
+    ]
 })
 export class AboutModule { }

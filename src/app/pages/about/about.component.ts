@@ -7,11 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-    cursos: any = [
-        { id: 1, nome: 'Angular'},
-        { id: 2, nome: 'Java'}
-    ];
-
     constructor() { }
 
     ngOnInit() {
