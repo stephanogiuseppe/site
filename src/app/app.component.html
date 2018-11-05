@@ -1,9 +1,21 @@
+<nav>
+    <div>
+        <ul id="nav-about">
+            <li routerLinkActive=""><a routerLink="/"></a></li>
+            <li routerLinkActive=""><a [routerLink]="['about']">about</a></li>
+        </ul>
+    </div>
+</nav>
+
 <div style="text-align:center">
 	<h1>
 		Welcome to {{ title }}!
 	</h1>
 </div>
 
-<router-outlet></router-outlet>
+<main>
+    <router-outlet></router-outlet>
+</main>
 
-<a [routerLink]="['about']">about</a>
+<footer>
+</footer>
