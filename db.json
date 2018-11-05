@@ -1,0 +1,15 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "currentVersion": "7.0.2",
+      "side": "front-end",
+      "developedBy": "Google"
+    },
+    {
+      "name": "sample",
+      "id": 3
+    }
+  ]
+}

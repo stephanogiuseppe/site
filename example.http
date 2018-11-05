@@ -1,0 +1,23 @@
+POST http://localhost:3000/skills HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample"
+}
+
+###
+
+PUT http://localhost:3000/skills/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample2"
+}
+
+###
+
+GET http://localhost:3000/skills HTTP/1.1
+
+###
+
+DELETE http://localhost:3000/skills/2 HTTP/1.1
