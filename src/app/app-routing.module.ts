@@ -7,9 +7,9 @@ import { ErrorPageComponent } from './layout/error-page/error-page.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
-    // { path: 'about', component: AboutComponent },
+    { path: 'about', loadChildren: './pages/about/about.module#AboutModule' },
     { path: 'invalid-url', component: ErrorPageComponent },
-    { path: '', pathMatch: 'full', redirectTo: 'about' }
+    { path: '', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 @NgModule({
