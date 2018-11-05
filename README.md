@@ -30,4 +30,13 @@ src
 
 ## Build on GithubPages
 
-ng build --prod --output-path docs --base-href site
+    ng build --prod --output-path docs --base-href site
+
+## Install Apollo Client for Angular
+
+    npm install apollo-angular apollo-angular-link-http apollo-client apollo-cache-inmemory graphql-tag graphql
+
+## Json Server
+
+    npm install -g json-server (install)
+    json-server --watch db.json
